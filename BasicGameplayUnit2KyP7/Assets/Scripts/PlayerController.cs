@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Space Pressed.");
-            Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
     }
 }
