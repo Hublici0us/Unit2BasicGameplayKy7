@@ -17,12 +17,15 @@ public class DestroyOutOfBounds : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //destroys gameObjects that are out of the player view
         if (transform.position.z > topBoundary)
         {
             Destroy(gameObject);
         }
         else if (transform.position.z < lowBoundary)
         {
+            //when animals go past player, game over.
+            Debug.Log("Game Over!");
             Destroy(gameObject);
         }
     }

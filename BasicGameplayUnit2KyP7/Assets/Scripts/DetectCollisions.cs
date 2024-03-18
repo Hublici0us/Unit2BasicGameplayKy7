@@ -17,6 +17,7 @@ public class DetectCollisions : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
+        //when animals and the food collide, destroy both.
     {
         Destroy(gameObject);   
         Destroy(other.gameObject);
