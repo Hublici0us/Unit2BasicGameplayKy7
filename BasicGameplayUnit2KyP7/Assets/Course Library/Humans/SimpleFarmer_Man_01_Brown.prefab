@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 9500000}
   - component: {fileID: 3539332317739914832}
+  - component: {fileID: 211230627787578473}
   m_Layer: 0
   m_Name: SimpleFarmer_Man_01_Brown
   m_TagString: Untagged
@@ -73,8 +74,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 40
   xRange: 15
-  zRange: 6
+  zRange: 9.5
   projectilePrefab: {fileID: 4040052775585434539, guid: eb654c324f009a34ea56c4ef6a237752, type: 3}
+--- !u!65 &211230627787578473
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0406039, y: 3.4194827, z: 1}
+  m_Center: {x: 0.020302266, y: 1.2097411, z: 0}
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0

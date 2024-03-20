@@ -8,8 +8,9 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] animalPrefabs;
     // [] represents an array, where you can store multiple variables in.
 
-    float spawnX = 15;
-    float spawnZ = 15;
+    float spawnX = 13;
+    float spawnXhorz = 25;
+    float spawnZ = 10;
     public float spawnDelay = 2;
     public float spawnInterval = 1;
     
@@ -30,12 +31,12 @@ public class SpawnManager : MonoBehaviour
         //spawns the animals
     {
         int animalIndex = Random.Range(0, animalPrefabs.Length);
-        Vector3 spawnPosVert = new Vector3(Random.Range(-spawnX, spawnX), 0, spawnZ);
-        Vector3 spawnPosHorz1 = new Vector3(spawnX, 0, Random.Range(-spawnZ, spawnZ));
-        Vector3 spawnPosHorz2 = new Vector3(-spawnX, 0, Random.Range(-spawnZ, spawnZ));
+        Vector3 spawnPosVert = new Vector3(Random.Range(-spawnX, spawnX), 0, 16);
+        Vector3 spawnPosHorz1 = new Vector3(spawnXhorz, 0, Random.Range(-spawnZ, spawnZ));
+        Vector3 spawnPosHorz2 = new Vector3(-spawnXhorz, 0, Random.Range(-spawnZ, spawnZ));
 
         Instantiate(animalPrefabs[animalIndex], spawnPosVert, animalPrefabs[animalIndex].transform.rotation);
-        Instantiate(animalPrefabs[animalIndex], spawnPosHorz1,transform.rotation);
-        Instantiate(animalPrefabs[animalIndex], spawnPosHorz2, animalPrefabs[animalIndex].transform.rotation);
+        Instantiate(animalPrefabs[animalIndex], spawnPosHorz1,Quaternion.Euler(0,270,0));
+        Instantiate(animalPrefabs[animalIndex], spawnPosHorz2, Quaternion.Euler(0,90,0));
     }
 }

@@ -10,8 +10,11 @@ public class PlayerController : MonoBehaviour
     public float speed = 20.0f;
     public float xRange = 15.0f;
     public float zRange = 15.0f;
+    public int lives = 3;
 
     public GameObject projectilePrefab;
+    public GameObject player;
+    BoxCollider box2d;
 
     // Start is called before the first frame update
     void Start()
@@ -52,5 +55,11 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Space Pressed.");
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Lives: " + lives);
+
     }
 }
