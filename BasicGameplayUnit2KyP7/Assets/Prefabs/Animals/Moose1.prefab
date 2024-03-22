@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3677560919752547247}
   - component: {fileID: 1923752511789271033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Moose_Female_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8901118929939606719}
   - component: {fileID: 1867782018458770475}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Moose_Male_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3262448272488934637}
   - component: {fileID: 2907674388220816698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Stag_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6435242923004486175}
   - component: {fileID: 8581739277067008797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Moose_Male_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6183545844394830138}
   - component: {fileID: 1914928939373727250}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Stag_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,11 +438,10 @@ GameObject:
   - component: {fileID: 3928336480325482685}
   - component: {fileID: 6898927195596030093}
   - component: {fileID: 8256131667188310398}
-  - component: {fileID: -3273536711036853007}
   - component: {fileID: -1510693151632743396}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Moose1
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -528,10 +527,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
@@ -539,33 +538,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2, y: 0.5, z: 0.38930407}
   m_Center: {x: 0, y: 0.25, z: 0.06465201}
---- !u!54 &-3273536711036853007
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5997781795328825631}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &-1510693151632743396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,7 +551,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  food: {fileID: 0}
+  food: {fileID: 4040052775585434539, guid: eb654c324f009a34ea56c4ef6a237752, type: 3}
+  lives: 3
 --- !u!1 &6166882478860532422
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8076804100285828070}
   - component: {fileID: 3011475496497639223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Doe_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3412513483281049865}
   - component: {fileID: 5220738779316885510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Stag_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -760,7 +733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1017150398711410328}
   - component: {fileID: 1641603831974059982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Moose_Male_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5962475124035873513}
   - component: {fileID: 2807984662164105588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Moose_Female_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -930,7 +903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8784487370095099365}
   - component: {fileID: 1128206977204448567}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Doe_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}

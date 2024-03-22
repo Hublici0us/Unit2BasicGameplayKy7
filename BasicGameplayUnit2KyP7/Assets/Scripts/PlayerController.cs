@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public float zRange = 15.0f;
     public int lives = 3;
 
+    public Transform projectileSpawn;
     public GameObject projectilePrefab;
     public GameObject player;
     BoxCollider box2d;
@@ -53,13 +55,19 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Space Pressed.");
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, projectileSpawn.transform.position, projectilePrefab.transform.rotation);
         }
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Lives: " + lives);
-
+        int notLife = 1;
+        lives = lives - notLife;
+        Debug.Log("Lives :" + lives);
+        if (lives <= 0)
+        {
+            Debug.Log("Game Over");
+        }
     }
 }
