@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject food;
     public int lives;
 
     SpawnManager spawn;
@@ -35,7 +33,11 @@ public class DetectCollisions : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     //when animals and the food collide, destroy both.
     {
-
+        if (other.CompareTag("Player"))
+        {
+            gManager.AddLives(-1);
+            Destroy(gameObject);
+        }
         if (other.CompareTag("Enemies"))
         {
             gManager.AddScore(5);

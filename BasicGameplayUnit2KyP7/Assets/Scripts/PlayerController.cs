@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     public float speed = 20.0f;
     public float xRange = 15.0f;
     public float zRange = 15.0f;
-    public int lives = 3;
 
     public Transform projectileSpawn;
     public GameObject projectilePrefab;
@@ -58,16 +57,5 @@ public class PlayerController : MonoBehaviour
             Instantiate(projectilePrefab, projectileSpawn.transform.position, projectilePrefab.transform.rotation);
         }
 
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        int notLife = 1;
-        lives = lives - notLife;
-        Debug.Log("Lives :" + lives);
-        if (lives <= 0)
-        {
-            Debug.Log("Game Over");
-        }
     }
 }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3677560919752547247}
   - component: {fileID: 1923752511789271033}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SM_Moose_Female_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8901118929939606719}
   - component: {fileID: 1867782018458770475}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SM_Moose_Male_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3262448272488934637}
   - component: {fileID: 2907674388220816698}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SM_Stag_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6435242923004486175}
   - component: {fileID: 8581739277067008797}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SM_Moose_Male_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6183545844394830138}
   - component: {fileID: 1914928939373727250}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SM_Stag_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 6898927195596030093}
   - component: {fileID: 8256131667188310398}
   - component: {fileID: -1510693151632743396}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Moose1
   m_TagString: Enemies
   m_Icon: {fileID: 0}
@@ -563,7 +563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8076804100285828070}
   - component: {fileID: 3011475496497639223}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SM_Doe_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3412513483281049865}
   - component: {fileID: 5220738779316885510}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SM_Stag_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -733,7 +733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1017150398711410328}
   - component: {fileID: 1641603831974059982}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SM_Moose_Male_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -818,7 +818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5962475124035873513}
   - component: {fileID: 2807984662164105588}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SM_Moose_Female_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8784487370095099365}
   - component: {fileID: 1128206977204448567}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SM_Doe_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
